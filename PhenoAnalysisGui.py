@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QPushButton, QLabel, QLineEdit, 
                              QTextEdit, QFileDialog, QTabWidget, QGroupBox, 
                              QSpinBox, QMessageBox, QProgressBar, QCheckBox)
-from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt5.QtCore import QThread, pyqtSignal, Qt
 from ultralytics import YOLO
 
 # 引入分析模块
@@ -214,7 +214,7 @@ class WheatPhenoGUI(QMainWindow):
 
         # 3. 底部进度条
         self.progress = QProgressBar()
-        self.progress.setAlignment(0x0084) # Center align
+        self.progress.setAlignment(Qt.AlignCenter) # Center align
         main_layout.addWidget(self.progress)
 
     def log(self, message):
