@@ -24,7 +24,7 @@ To help you get started immediately, we provide the following resources in this 
     * `models/detect_model.pt`: For seedling detection (Step 1).
     * `models/segment_model.pt`: For seedling segmentation (Step 2).
 * **Test Data**: 
-    * `test/`: A folder containing **10 sample images** for testing the pipeline.
+    * `test/`: A folder containing **2 sample images** for testing the pipeline.
 
 ### 🚀 Quick Start
 
@@ -69,7 +69,7 @@ To help you get started immediately, we provide the following resources in this 
     * `models/detect_model.pt`: 用于 Step 1 的目标检测基础模型。
     * `models/segment_model.pt`: 用于 Step 2 的实例分割基础模型。
 * **测试数据**:
-    * `test/`: 根目录下的文件夹，内含 **10 张测试图像**，可直接用于跑通全流程。
+    * `test/`: 根目录下的文件夹，内含 **2 张测试图像**，可直接用于跑通全流程。
 
 ### 🚀 使用教程
 
