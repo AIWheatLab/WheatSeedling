@@ -1,4 +1,3 @@
-# WheatEmergenceRateAndUniformity
 # WheatSeedling-PhenoQuant
 
 [English](#english) | [中文](#chinese)
@@ -19,6 +18,14 @@
     * Includes outlier removal (IQR) and data normalization.
 * **GUI**: User-friendly interface built with PyQt5.
 
+### 📂 Included Resources
+To help you get started immediately, we provide the following resources in this repository:
+* **Models**: Basic pre-trained models are located in the `models/` directory:
+    * `models/detect_model.pt`: For seedling detection (Step 1).
+    * `models/segment_model.pt`: For seedling segmentation (Step 2).
+* **Test Data**: 
+    * `test/`: A folder containing **10 sample images** for testing the pipeline.
+
 ### 🚀 Quick Start
 
 1.  **Installation**:
@@ -28,8 +35,17 @@
 2.  **Usage**:
     Run the main GUI:
     ```bash
-    python PhenoAnalysisGui.py
+    python main_gui.py
     ```
+3.  **Test Run**:
+    * **Tab 1 (Detection)**: 
+        * Select `models/detect_model.pt` as the model.
+        * Select the `test/` folder as input.
+        * Click "Start Detection".
+    * **Tab 2 (Segmentation)**: 
+        * Select `models/segment_model.pt` as the model.
+        * Select the `test/` folder as input.
+        * Click "Start Segmentation".
 
 ---
 
@@ -47,6 +63,14 @@
     * **异常处理**: 内置 IQR 算法自动剔除异常数据，并进行归一化处理。
 * **图形界面**: 提供基于 PyQt5 的可视化操作界面，无需编写代码。
 
+### 📂 项目资源
+为了方便您快速上手，本项目包含以下资源：
+* **基础模型**: 所有预训练模型均保存在 `models/` 文件夹内：
+    * `models/detect_model.pt`: 用于 Step 1 的目标检测基础模型。
+    * `models/segment_model.pt`: 用于 Step 2 的实例分割基础模型。
+* **测试数据**:
+    * `test/`: 根目录下的文件夹，内含 **10 张测试图像**，可直接用于跑通全流程。
+
 ### 🚀 使用教程
 
 1.  **环境配置**:
@@ -56,9 +80,16 @@
     ```
 2.  **运行程序**:
     ```bash
-    python PhenoAnalysisGui.py
+    python main_gui.py
     ```
-3.  **操作流程**:
-    * 在 **Tab 1** 加载 `.pt` 检测模型，统计出苗数。
-    * 在 **Tab 2** 加载 `.pt` 分割模型，生成 `mask_areas_batch.xlsx`。
-    * 在 **Tab 3** 导入 Tab 2 生成的 Excel，一键生成包括清洗、统计、归一化在内的 4 份报表。
+3.  **快速测试**:
+    * **Tab 1 (检测)**: 
+        * 模型路径选择 `models/detect_model.pt`。
+        * 输入文件夹选择 `test/`。
+        * 点击“开始检测”。
+    * **Tab 2 (分割)**: 
+        * 模型路径选择 `models/segment_model.pt`。
+        * 输入文件夹选择 `test/`。
+        * 点击“开始分割”。
+    * **Tab 3 (分析)**: 
+        * 导入 Tab 2 生成的 Excel 文件，即可生成最终统计报表。
