@@ -11,7 +11,7 @@
 
 ### ✨ Key Features
 * **Step 1: Automated Counting**: Detects and counts wheat seedlings using YOLOv8.
-* **Step 2: Biomass Estimation**: Extracts leaf area (mask) using Instance Segmentation.
+* **Step 2: Biomass Estimation**: Extracts leaf area (mask) and removing abnormal objects using Instance Segmentation.
 * **Step 3: Statistical Profiling**: 
     * Automatically restructures data from image-based to plot-based (Field ID).
     * Calculates **Mean**, **Std Dev**, **CV (Coefficient of Variation)**, and **Entropy**.
@@ -56,7 +56,7 @@ To help you get started immediately, we provide the following resources in this 
 
 ### ✨ 主要功能
 * **Step 1: 自动计数**: 基于 YOLOv8 目标检测，快速统计出苗数。
-* **Step 2: 生物量预估**: 通过实例分割提取叶片掩膜面积。
+* **Step 2: 生物量预估**: 通过实例分割提取叶片掩膜面积并去除异常目标。
 * **Step 3: 统计画像**:
     * **数据重构**: 将图像层面的数据自动转换为小区（Plot）层面的数据（支持 `1-`, `2-` 等标识）。
     * **指标计算**: 自动计算均值、标准差、变异系数 (CV) 和 熵值 (Entropy)。
