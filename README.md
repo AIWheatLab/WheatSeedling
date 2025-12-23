@@ -35,7 +35,7 @@ To help you get started immediately, we provide the following resources in this 
 2.  **Usage**:
     Run the main GUI:
     ```bash
-    python main_gui.py
+    python PhenoAnalysisGui.py
     ```
 3.  **Test Run**:
     * **Tab 1 (Detection)**: 
@@ -80,7 +80,7 @@ To help you get started immediately, we provide the following resources in this 
     ```
 2.  **运行程序**:
     ```bash
-    python main_gui.py
+    python PhenoAnalysisGui.py
     ```
 3.  **快速测试**:
     * **Tab 1 (检测)**: 
