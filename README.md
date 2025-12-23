@@ -15,7 +15,7 @@
 * **Step 3: Statistical Profiling**: 
     * Automatically restructures data from image-based to plot-based (Field ID).
     * Calculates **Mean**, **Std Dev**, **CV (Coefficient of Variation)**, and **Entropy**.
-    * Includes outlier removal (IQR) and data normalization.
+    * Includes outlier removal (IQR, optional) and data normalization.
 * **GUI**: User-friendly interface built with PyQt5.
 
 ### 📂 Included Resources
@@ -60,7 +60,7 @@ To help you get started immediately, we provide the following resources in this 
 * **Step 3: 统计画像**:
     * **数据重构**: 将图像层面的数据自动转换为小区（Plot）层面的数据（支持 `1-`, `2-` 等标识）。
     * **指标计算**: 自动计算均值、标准差、变异系数 (CV) 和 熵值 (Entropy)。
-    * **异常处理**: 内置 IQR 算法自动剔除异常数据，并进行归一化处理。
+    * **异常处理**: 内置 IQR 算法自动剔除异常数据（可选），并进行归一化处理。
 * **图形界面**: 提供基于 PyQt5 的可视化操作界面，无需编写代码。
 
 ### 📂 项目资源
