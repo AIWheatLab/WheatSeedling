@@ -28,7 +28,7 @@
 2.  **Usage**:
     Run the main GUI:
     ```bash
-    python main_gui.py
+    python GUI.py
     ```
 
 ---
@@ -56,7 +56,7 @@
     ```
 2.  **运行程序**:
     ```bash
-    python main_gui.py
+    python GUI.py
     ```
 3.  **操作流程**:
     * 在 **Tab 1** 加载 `.pt` 检测模型，统计出苗数。
